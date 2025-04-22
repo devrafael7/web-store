@@ -7,17 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white">
-    <header class="w-full h-12 fixed z-50 bg-gray-200 bg-opacity-60 flex justify-between items-center px-14">
-        <h1 class="font-bold text-xl text-blue-400">TalkVerse</h1>
-        <nav class="flex mr-10">
+    <header class="w-full h-12 fixed z-50 bg-gray-200 bg-opacity-60 flex justify-between items-center px-24">
+        <h1 class="font-bold text-xl text-blue-400 cursor-pointer">TalkVerse</h1>
+        <nav class="flex ml-10">
             <ul class="list-none flex gap-6 items-center justify-center">
-                <li class="text-sm font-semibold text-gray-600 cursor-pointer">Home</li>
-                <li class="text-sm font-semibold text-gray-600 cursor-pointer">Shop</li>
-                <li class="text-sm font-semibold text-gray-600 cursor-pointer">Collection</li>
+                <li class="text-sm font-semibold text-gray-600 cursor-pointer hover-underline">Home</li>
+                <li class="text-sm font-semibold text-gray-600 cursor-pointer hover-underline">Shop</li>
+                <li class="text-sm font-semibold text-gray-600 cursor-pointer hover-underline">Collection<li>            
             </ul>
         </nav>
-        <div>
-            <h1>Items</h1>
+        <div class="flex w-56 h-4/6 shadow bg-white rounded-full bg-white pl-4">
+            <input class="text-sm border-none w-full outline-none" type="text" name="" id="">
+            <img class="rounded-full px-3 py-2" src="/frontend/public/icons/loupe.png" alt="">
         </div>
     </header>
     <main class="w-full h-full relative pt-12 flex px-20 items-center justify-between bg-white">
@@ -34,7 +35,6 @@
                 START NOW
             </button>
           </div>
-          
     </main>
 
 
@@ -52,9 +52,30 @@
             height: 100vh;
         }
 
+        .hover-underline {
+            position: relative;
+        }
+          
+        .hover-underline::after {
+            content: "";
+            position: absolute;
+            bottom: -2px; /* ajusta a distância da borda */
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background-color: #69778abd; /* mesma cor do texto cinza-600 */
+            transition: width 0.3s ease-in-out;
+        }
+          
+        .hover-underline:hover::after {
+            width: 100%;
+        }          
+
         .mainImage {
             width: 45%;
         }
+
+        
     </style>
 </body>
 </html>
