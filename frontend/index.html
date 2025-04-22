@@ -31,15 +31,12 @@
             </div>
             <h1 class="text-black text-6xl font-light mb-3">Learn Now!</h1>
             <h5 class="text-black mb-7">30% off Summer Vacation</h5>
-            <button class="px-5 py-2 bg-none border border-black border-solid text-black  text-sm" type="button">
-                START NOW
-            </button>
+            <button class="btn-hover-underline px-5 py-2 bg-none border border-black border-solid text-sm relative overflow-hidden flex justify-center items-center group">
+                <p class="STARTNOW text-black transition-colors duration-300 group-hover:text-gray-200">START NOW</p>
+            </button>                          
           </div>
     </main>
-
-
-
-
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -69,7 +66,29 @@
           
         .hover-underline:hover::after {
             width: 100%;
-        }          
+        }    
+        
+        .btn-hover-underline::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 0%;
+            background-color: black;
+            z-index: 0;
+            transition: width 0.3s ease-in-out;
+        }
+          
+        .btn-hover-underline:hover::after {
+            width: 100%;
+        }
+          
+        .btn-hover-underline p {
+            position: relative;
+            z-index: 10;
+        }
+          
 
         .mainImage {
             width: 45%;
