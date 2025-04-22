@@ -6,37 +6,43 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white">
-    <header class="w-full h-12 fixed z-50 bg-gray-200 bg-opacity-60 flex justify-between items-center px-24">
+<body class="bg-white flex justify-center items-center relative flex-col overflow-x-hidden">
+    <header class="w-full h-12 fixed top-0 z-50 bg-gray-200 bg-opacity-60 flex justify-between items-center px-4 md:px-20 lg:px-24 left-0">
         <h1 class="font-bold text-xl text-blue-400 cursor-pointer">TalkVerse</h1>
-        <nav class="flex ml-10">
+        <nav class="hidden ml-10 md:flex lg:flex">
             <ul class="list-none flex gap-6 items-center justify-center">
                 <li class="text-sm font-semibold text-gray-600 cursor-pointer hover-underline">Home</li>
                 <li class="text-sm font-semibold text-gray-600 cursor-pointer hover-underline">Shop</li>
                 <li class="text-sm font-semibold text-gray-600 cursor-pointer hover-underline">Collection<li>            
             </ul>
         </nav>
-        <div class="flex w-56 h-4/6 shadow bg-white rounded-full bg-white pl-4">
+        <div class="hidden md:flex lg:flex w-56 h-4/6 shadow bg-white rounded-full bg-white pl-4">
             <input class="text-sm border-none w-full outline-none" type="text" name="" id="">
             <img class="rounded-full px-3 py-2" src="/frontend/public/icons/loupe.png" alt="">
         </div>
+        <img class="cursor-pointer w-7 h-7 md:hidden lg:hidden" src="/frontend/public/icons/icons8-cardápio-50 (1).png" alt="">
     </header>
-    <main class="w-full h-full relative pt-12 flex px-20 items-center justify-between bg-white">
-        <img class="mainImage" src="/frontend/public/images/young-read-head-woman-wearing-casual-clothes-glasses-winking-looking-camera-with-sexy-expression-cheerful-happy-face.jpg" alt="">
+
+    <main class="w-full h-auto relative pt-12 flex flex-col md:flex-row lg:flex-row px-20 items-center justify-between">
+        <img class="mainImage mb-5 md:mb-0 lg:mb-0" src="/frontend/public/images/young-read-head-woman-wearing-casual-clothes-glasses-winking-looking-camera-with-sexy-expression-cheerful-happy-face.jpg" alt="">
         <div class="w-full flex flex-col items-center justify-center mb-4 h-1/2">
             <div class="flex justify-center items-center w-full max-w-md gap-4 mb-3">
               <hr class="w-14 border-t-2 border-black">
               <span class="text-black whitespace-nowrap text-lg font-normal">English</span>
               <hr class="w-14 border-t-2 border-black">
             </div>
-            <h1 class="text-black text-6xl font-light mb-3">Learn Now!</h1>
+            <h1 class="text-black text-4xl md:text-5xl lg:text-6xl font-light mb-3">Learn Now!</h1>
             <h5 class="text-black mb-7">30% off Summer Vacation</h5>
-            <button class="btn-hover-underline px-5 py-2 bg-none border border-black border-solid text-sm relative overflow-hidden flex justify-center items-center group">
+            <button class="btn-hover-underline px-3 py-3 md:px-4 md:py-4 lg:px-5 lg:py-5 bg-none border border-black border-solid text-sm relative overflow-hidden flex justify-center items-center group">
                 <p class="STARTNOW text-black transition-colors duration-300 group-hover:text-gray-200">START NOW</p>
             </button>                          
           </div>
     </main>
-    
+
+    <section class="w-full border-t border-gray-200 border-solid bg-white">
+
+    </section>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -46,7 +52,7 @@
 
         body {
             width: 100vw;
-            height: 100vh;
+            height: 200vh;
         }
 
         .hover-underline {
@@ -89,12 +95,15 @@
             z-index: 10;
         }
           
-
-        .mainImage {
-            width: 45%;
+        section {
+            height: 100vh;
         }
 
-        
+        @media (min-width: 640px) and (max-width: 4068px) {
+            .mainImage {
+                width: 43%;
+            }
+        }
     </style>
 </body>
 </html>
