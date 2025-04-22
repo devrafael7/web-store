@@ -6,18 +6,33 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-200">
-    <header class="w-full h-12 fixed z-50">
-        
+<body class="bg-white">
+    <header class="w-full h-12 fixed z-50 bg-gray-200 bg-opacity-60 flex justify-between items-center px-14">
+        <h1 class="font-bold text-xl text-blue-400">TalkVerse</h1>
+        <nav class="flex mr-10">
+            <ul class="list-none flex gap-6 items-center justify-center">
+                <li class="text-sm font-semibold text-gray-600 cursor-pointer">Home</li>
+                <li class="text-sm font-semibold text-gray-600 cursor-pointer">Shop</li>
+                <li class="text-sm font-semibold text-gray-600 cursor-pointer">Collection</li>
+            </ul>
+        </nav>
+        <div>
+            <h1>Items</h1>
+        </div>
     </header>
-    <main class="w-full h-full relative pt-12 flex px-20 items-center justify-between">
-        <img class="mainImage rounded-sm border border-white border-solid scale-x-[-1]" src="/frontend/public/images/shocked-young-caucasian-girl-holds-file-folders-looking-pointing-side-isolated-green-background-with-copy-space.jpg" alt="">
-        <div class="w-full flex flex-col items-center justify-start h-1/2">
-            <div class="flex justify-center items-center w-full max-w-md gap-4">
-              <hr class="w-14 border-t-2 border-white">
-              <span class="text-white whitespace-nowrap text-lg font-light">English</span>
-              <hr class="w-14 border-t-2 border-white">
+    <main class="w-full h-full relative pt-12 flex px-20 items-center justify-between bg-white">
+        <img class="mainImage" src="/frontend/public/images/young-read-head-woman-wearing-casual-clothes-glasses-winking-looking-camera-with-sexy-expression-cheerful-happy-face.jpg" alt="">
+        <div class="w-full flex flex-col items-center justify-center mb-4 h-1/2">
+            <div class="flex justify-center items-center w-full max-w-md gap-4 mb-3">
+              <hr class="w-14 border-t-2 border-black">
+              <span class="text-black whitespace-nowrap text-lg font-normal">English</span>
+              <hr class="w-14 border-t-2 border-black">
             </div>
+            <h1 class="text-black text-6xl font-light mb-3">Learn Now!</h1>
+            <h5 class="text-black mb-7">30% off Summer Vacation</h5>
+            <button class="px-5 py-2 bg-none border border-black border-solid text-black  text-sm" type="button">
+                START NOW
+            </button>
           </div>
           
     </main>
@@ -26,21 +41,19 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
         body {
             width: 100vw;
             height: 100vh;
         }
 
-        header {
-            background: #bfc589;
-        }
-
-        main {
-            background: #b2b977;
-        }
-
         .mainImage {
-            width: 42%;
+            width: 45%;
         }
     </style>
 </body>
