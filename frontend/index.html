@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white flex justify-center items-center relative flex-col">
-    <header class="w-full h-12 fixed top-0 z-50 bg-gray-200 bg-opacity-60 flex justify-between items-center px-4 md:px-20 lg:px-24 left-0">
+    <header class="w-full h-12 fixed top-0 z-50 flex justify-between items-center px-4 md:px-20 lg:px-24 left-0">
         <h1 class="font-bold text-xl text-blue-400 cursor-pointer">TalkVerse</h1>
         <nav class="hidden ml-20 md:flex lg:flex">
             <ul class="list-none flex gap-6 items-center justify-center">
@@ -16,9 +16,9 @@
                 <li class="text-sm font-semibold text-gray-600 cursor-pointer hover-underline">Collection<li>            
             </ul>
         </nav>
-        <div class="hidden md:flex lg:flex w-56 h-4/6 shadow bg-white rounded-full bg-white pl-4">
-            <input class="text-sm border-none w-full outline-none" type="text" name="" id="">
-            <img class="rounded-full px-3 py-2" src="/frontend/public/icons/loupe.png" alt="">
+        <div class="hidden md:flex lg:flex w-56 h-4/6 shadow bg-white rounded-full pl-4">
+            <input class="text-sm border-none w-full outline-none bg-none" type="text" name="" id="">
+            <img class="cursor-pointer rounded-full px-3 py-2" src="/frontend/public/icons/loupe.png" alt="">
         </div>
         <img class="cursor-pointer w-7 h-7 md:hidden lg:hidden" src="/frontend/public/icons/icons8-cardápio-50 (1).png" alt="">
     </header>
@@ -39,7 +39,7 @@
           </div>
     </main>
 
-    <section class="reasonsWhySection w-full border-t border-gray-200 border-solid bg-white pt-32 flex flex-col items-center mb-28 lg:44">
+    <section class="reasonsWhySection w-full bg-white pt-32 flex flex-col items-center mb-28 lg:44">
         <div class="flex justify-center w-full items-center mb-20 gap-4">
             <hr class="w-36 border-t border-black">
             <h2 class="text-center">Reasons Why You Should Learn Other Languagens</h2>
@@ -100,28 +100,28 @@
             <div class="flex flex-col  w-full gap-3">
                 <div class="flex gap-3">
                     <div class="w-full h-44 rounded-lg bg-blue-500 hover:scale-105 flex px-5 items-center justify-between">
-                        <div class="flex flex-col items-start w-1/2">
+                        <div class="flex flex-col items-center md:items-start w-full text-center md:text-start md:w-1/2">
                             <h3 class="leading-light font-semibold text-sm mb-2 text-white">English <br> Study Material</h3>
                             <button class="px-3 py-0.5 bg-white rounded-full text-black text-xs font-semibold hover:scale-105 duration-[300ms]" type="button">
                                 Buy Now!
                             </button>
                         </div>
-                        <img class="w-1/2" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
+                        <img class="w-1/2 hidden md:flex" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
                     </div>
-                    <div class="w-full h-44 rounded-lg bg-blue-500 hover:scale-105 flex px-5 items-center justify-between">
-                        <div class="flex flex-col items-start w-1/2">
+                    <div class="w-full h-44 rounded-lg bg-yellow-500 hover:scale-105 flex px-5 items-center justify-between">
+                        <div class="flex flex-col items-center md:items-start w-full text-center md:text-start md:w-1/2">
                             <h3 class="leading-light font-semibold text-sm mb-2 text-white">English <br> Study Material</h3>
                             <button class="px-3 py-0.5 bg-white rounded-full text-black text-xs font-semibold hover:scale-105 duration-[300ms]" type="button">
                                 Buy Now!
                             </button>
                         </div>
-                        <img class="w-1/2" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
+                        <img class="w-1/2 hidden md:flex" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
                     </div>
                 </div>
-                <div class="w-full h-44 rounded-lg bg-red-500 hover:scale-105 flex px-20 items-center justify-between">
+                <div class="w-full h-44 rounded-lg bg-gray-300 bg-opacity-80 hover:scale-105 flex px-20 items-center justify-between">
                     <div class="flex flex-col items-start w-1/2">
-                        <h3 class="leading-light font-semibold text-sm mb-2 text-white">English <br> Study Material</h3>
-                        <button class="px-3 py-0.5 bg-white rounded-full text-black text-xs font-semibold hover:scale-105 duration-[300ms]" type="button">
+                        <h3 class="leading-light font-semibold text-sm mb-2 text-black">English <br> Study Material</h3>
+                        <button class="px-3 py-0.5 bg-black bg-opacity-80 rounded-full text-white text-xs font-semibold hover:scale-105 duration-[300ms]" type="button">
                             Buy Now!
                         </button>
                     </div>
@@ -139,23 +139,23 @@
                     <img class="w-1/2" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
                 </div>
                 <div class="flex gap-3">
-                    <div class="w-full h-44 rounded-lg bg-blue-500 hover:scale-105 flex px-5 items-center justify-between">
-                        <div class="flex flex-col items-start w-1/2">
+                    <div class="w-full h-44 rounded-lg bg-green-500 hover:scale-105 flex px-5 items-center justify-between">
+                        <div class="fflex flex-col items-center md:items-start w-full text-center md:text-start md:w-1/2">
                             <h3 class="leading-light font-semibold text-sm mb-2 text-white">English <br> Study Material</h3>
                             <button class="px-3 py-0.5 bg-white rounded-full text-black text-xs font-semibold hover:scale-105 duration-[300ms]" type="button">
                                 Buy Now!
                             </button>
                         </div>
-                        <img class="w-1/2" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
+                        <img class="w-1/2 hidden md:flex" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
                     </div>
-                    <div class="w-full h-44 rounded-lg bg-blue-500 hover:scale-105 flex px-5 items-center justify-between">
-                        <div class="flex flex-col items-start w-1/2">
+                    <div class="w-full h-44 rounded-lg bg-black bg-opacity-90 hover:scale-105 flex px-5 items-center justify-between">
+                        <div class="flex flex-col items-center md:items-start w-full text-center md:text-start md:w-1/2">
                             <h3 class="leading-light font-semibold text-sm mb-2 text-white">English <br> Study Material</h3>
-                            <button class="px-3 py-0.5 bg-white rounded-full text-black text-xs font-semibold hover:scale-105 duration-[300ms]" type="button">
+                            <button class="px-3 py-0.5 bg-red-500 text-white rounded-full text-xs font-semibold hover:scale-105 duration-[300ms]" type="button">
                                 Buy Now!
                             </button>
                         </div>
-                        <img class="w-1/2" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
+                        <img class="w-1/2 hidden md:flex" src="/frontend/public/images/3d-casual-life-book-and-cup-with-laptop.png" alt="">
                     </div>
                 </div>
             </div>
@@ -172,6 +172,10 @@
         body {
             width: 98.5vw;
             height: auto;
+        }
+
+        header {
+            background: #f0efef;
         }
 
         .hover-underline {
