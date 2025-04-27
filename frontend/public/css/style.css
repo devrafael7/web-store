@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background: #f0efef;
+}
+
+.hover-underline {
+    position: relative;
+}
+          
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* ajusta a distância da borda */
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #69778abd; /* mesma cor do texto cinza-600 */
+    transition: width 0.3s ease-in-out;
+}
+          
+.hover-underline:hover::after {
+    width: 100%;
+}    
+        
+.btn-hover-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: black;
+    z-index: 0;
+    transition: width 0.3s ease-in-out;
+}
+          
+.btn-hover-underline:hover::after {
+    width: 100%;
+}
+          
+.btn-hover-underline p {
+      position: relative;
+      z-index: 10;
+}
+          
+.reasonsWhySection {
+    height: auto;
+}
+
+.mainCard {
+    background: #1f9abf;
+    background: linear-gradient(90deg, rgba(31, 154, 191, 1) 0%, rgba(12, 159, 204, 1) 50%);
+}
+
+.cardsSection div{
+    transition: .2s ease;
+}
+
+.quizBtn {
+    transition: .3s ease;
+}
+
+.quizBtn:hover {
+    background: rgb(134, 150, 238);
+    transform: scale(1.05);
+}
+
+.quizBtn:hover p{
+    color: white;
+}
+
+.quizBtn:hover h1{
+    background: rgba(58, 58, 202, 0.808);
+    color: white;
+}
+
+@media (min-width: 640px) and (max-width: 4068px) {
+    .mainImage {
+        width: 43%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1290px) {
+    .mainCardImage {
+        right: 12%;
+    }
+}
