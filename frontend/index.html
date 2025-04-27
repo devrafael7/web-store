@@ -194,7 +194,7 @@
         </section>
     </section>
 
-    <div class="w-full h-auto flex flex-col lg:flex-row items-center px-7 lg:px-32 lg:justify-between mt-32 mb-20">
+    <div class="w-full h-auto flex flex-col lg:flex-row items-center px-7 lg:px-32 lg:justify-between mt-32 mb-24">
         <div class="flex flex-col items-center lg:items-start mb-8 lg:mb-0">
             <h1 class="font-extrabold text-4xl md:text-5xl text-center">DO OUR <span class="text-yellow-500">QUIZ</span> NOW!</h1>
             <h5 class="text-md font-semibold text-center">Now, how about we practice what we've learned?</h5>
@@ -206,21 +206,62 @@
     </div>
 
     <article class="quizArticle w-full h-screen flex flex-col items-center pt-12 px-5">
-        <h5 class="font-semibold mb-3">Question 1/8</h5>
-        <h1 class="mb-4 text-center mb-7 lg:mb-0">Witch language is most considered important in the world!?</h1>
-        <button class="w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+        <h5 class="font-semibold mb-4">Choose The Language</h5>
+        <h1 class="mb-4 text-center mb-7 lg:mb-2">Witch language do you want to do the Quiz?</h1>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+            <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold"><img src="https://cdn-icons-png.flaticon.com/128/197/197484.png" alt=""></h1>
+            <p class="font-semibold text-blue-800">English</p>
+        </button>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+            <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">
+                <img src="https://cdn-icons-png.flaticon.com/128/10601/10601048.png" alt="">
+            </h1>
+            <p class="font-semibold text-blue-800">Spanish</p>
+        </button>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+            <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">
+                <img src="https://cdn-icons-png.flaticon.com/128/197/197375.png" alt="">
+            </h1>
+            <p class="font-semibold text-blue-800">Chinese</p>
+        </button>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+            <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">
+                <img src="https://cdn-icons-png.flaticon.com/128/197/197560.png" alt="">
+            </h1>
+            <p class="font-semibold text-blue-800">French</p>
+        </button>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+            <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">
+                <img src="https://cdn-icons-png.flaticon.com/128/9906/9906449.png" alt="">
+            </h1>
+            <p class="font-semibold text-blue-800">Portuguese</p>
+        </button>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+            <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">
+                <img src="https://cdn-icons-png.flaticon.com/128/197/197571.png" alt="">
+            </h1>
+            <p class="font-semibold text-blue-800">German</p>
+        </button>
+    </article>
+
+
+
+    <article class="quizArticle w-full h-screen flex flex-col items-center pt-12 px-5 hidden">
+        <h5 class="font-semibold mb-4">Question 1/8</h5>
+        <h1 class="mb-4 text-center mb-7 lg:mb-2">Witch language is most considered important in the world!?</h1>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
             <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">A</h1>
             <p class="font-semibold text-blue-800">First Option</p>
         </button>
-        <button class="w-full lg:w-2/6 h-14 bg-blue-300 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
-            <h1 class="bg-blue-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-semibold">B</h1>
-            <p class="font-semibold text-white">Second Option</p>
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+            <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">B</h1>
+            <p class="font-semibold text-blue-800">Second Option</p>
         </button>
-        <button class="w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
             <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">C</h1>
             <p class="font-semibold text-blue-800">Third Option</p>
         </button>
-        <button class="w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
+        <button class="quizBtn w-full lg:w-2/6 h-14 bg-gray-200 rounded-lg flex items-center px-5 gap-3 mb-3" type="button">
             <h1 class="bg-white w-8 h-8 flex items-center justify-center rounded-full text-blue-800 font-semibold">D</h1>
             <p class="font-semibold text-blue-800">Fourth Option</p>
         </button>
@@ -313,6 +354,24 @@
 
         .cardsSection div{
             transition: .2s ease;
+        }
+
+        .quizBtn {
+            transition: .3s ease;
+        }
+
+        .quizBtn:hover {
+            background: rgb(134, 150, 238);
+            transform: scale(1.05);
+        }
+
+        .quizBtn:hover p{
+            color: white;
+        }
+
+        .quizBtn:hover h1{
+            background: rgba(58, 58, 202, 0.808);
+            color: white;
         }
 
         @media (min-width: 640px) and (max-width: 4068px) {
